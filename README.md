@@ -5,6 +5,8 @@ This is a reference implementation of FlyMon. The repository includes P4 hardwar
 ## P4 Implemenatation
 We implement FlyMon based on P4-16, with the SDE Version 9.7.0. We opensource three versions of Flymon:
 
+Note (2022/5/15): This branch has been deprecated and we are working hard to refactor a new, more complete and flexible code framework (see the dev branch).
+
 ### Single CMU-Group Implementation
 
 The main branch is a reference implementation of single CMU-Group, which includes:
@@ -19,9 +21,13 @@ The main branch is a reference implementation of single CMU-Group, which include
 
 To see the cross-stacking version of FlyMon, please checkout to the `stackable_cmug` branch.
 
+Note (2022/5/15): We temporarily remove this branch because we are refactoring all the code in the dev branch.
+
 ### Strawman Implementation of CMU
 
 To see the strawman solution (without optimizations on key-selection and attribute-operation), please checkout to the `strawman_solution` branch.
+
+Note (2022/5/15): We temporarily remove this branch because we are refactoring all the code in the dev branch.
 
 **NOTE#1** : for historical reasons, the compression unit (CU) is referred to as the shared compression stage. The execution unit (EU) is referred to as composable measurement unit (CMU). The transformable measurement unit (TMU) is referred to CMU-Group. We are working on refactoring the code to the correct component name.
 
